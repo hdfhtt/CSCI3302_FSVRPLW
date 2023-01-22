@@ -7,20 +7,20 @@
 """
 
 
-# noinspection PyPep8Naming
-def F(C, n):  # basic algorithm
+# Coin-Row (basic algorithm)
+def coin_row(c, n):
     # base case
     if n == 0:
         return 0
 
     if n == 1:
-        return C[0]
+        return c[0]
 
     # max { F(n - 1), Cn + F(n - 2) }
-    return max(F(C, n - 1), C[n - 1] + F(C, n - 2))
+    return max(coin_row(c, n - 1), c[n - 1] + coin_row(c, n - 2))
 
 
 if __name__ == '__main__':
-    coins = [5, 1, 2, 10, 6, 2]  # sample input for basic algorithm
-    print("Coin-row: ", F(coins, len(coins)))
+    coins = [5, 1, 2, 10, 6, 2]  # sample inputs
+    print("Coin-row: ", coin_row(coins, len(coins)))
 
