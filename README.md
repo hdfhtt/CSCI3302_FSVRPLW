@@ -6,8 +6,8 @@
 
 ### Pseudocodes for FSVRPLW
 ```
-Input: N: Number of customer, W: Payload of each customer, C: Coordinates of each customer, Vw: Wind Vector
-Vw: Wind Vector
+Input: N: Number of customer, W: Payload of each customer,
+ C: Coordinates of each customer, Vw: Wind Vector
 
 Output: Optimal Route: The route that minimizes the total flight time
 WallW
