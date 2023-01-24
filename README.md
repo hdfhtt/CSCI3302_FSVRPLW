@@ -41,5 +41,5 @@ end for
 
 ### Additional Notes
 1. This project is a programming assignment assessed by the *CSCI 3302: Data Structures & Algorithms 2* course instructed by *Dr. Nurul Liyana Binti Mohamad Zulkufli* and offered by *International Islamic University, Malaysia*.
-2. The coding implementation of the the dynamic programming approach can be referred [here](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py). However, the code is not working as some part requires a high level of knowledge to implement and has been labelled as *todo*. 
+2. The python implementation of the this dynamic programming approach can be referred [here](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py). However, the code is not working as some part requires high levels of knowledge to implement and has been labelled as *todo*. 
 3. The project is licensed under **MIT License**, the terms of which are available in [LICENSE.txt](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/LICENSE).
