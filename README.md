@@ -38,6 +38,13 @@ for Previous ∈ C do
 end for
 ```
 
+### Performances
+| Complexity | T(n) |
+| :--- | :---: |
+| Time | ? |
+| Space | ? |
+
+<sub>* *Time and space complexity are yet to be identify as the code is currently not working.*</sub>
 
 ### Additional Notes
 1. This project is a programming assignment assessed by the *CSCI 3302: Data Structures & Algorithms 2* course instructed by *Dr. Nurul Liyana Binti Mohamad Zulkufli* and offered by *International Islamic University, Malaysia*.
