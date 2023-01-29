@@ -1,5 +1,5 @@
 # CSCI 3302: Modified Algorithm - FSVRPLW
-**FSVRPLW** stands for *Flight Speed-aware Vehicle Routing Problem with Load and Wind* and is one of the [NP-hard problems](https://en.wikipedia.org/wiki/NP-hardness). The dynamic programming approach to this problem is finding the optimal route that minimizes the total flight time. The payloads influences the flight speed, the heavier the weight, the slower it will be. The goal is to calculate the shortest time for the drone to deliver all the packages.
+<p align="justify"><b>FSVRPLW</b> stands for <i>Flight Speed-aware Vehicle Routing Problem with Load and Wind</i> and is one of the <a href="https://en.wikipedia.org/wiki/NP-hardness">NP-hard problems</a>. The dynamic programming approach to this problem is finding the optimal route that minimizes the total flight time. The payloads influences the flight speed, the heavier the weight, the slower it will be. The goal is to calculate the shortest time for the drone to deliver all the packages.</p>
 
 ### Journal Reference
 <div class="csl-entry">Ito, S., Akaiwa, K., Funabashi, Y., Nishikawa, H., Kong, X., Taniguchi, I., &#38; Tomiyama, H. (2022). Load and Wind Aware Routing of Delivery Drones. <i>Drones</i>, <i>6</i>(2). https://doi.org/10.3390/drones6020050</div>
@@ -10,7 +10,7 @@ Input: N: Number of customer, W: Payload of each customer,
  C: Coordinates of each customer, Vw: Wind Vector
 
 Output: Optimal Route: The route that minimizes the total flight time
-WallW
+Wall ← ΣW
 
 for Next ∈ C do
   FT[1 << (Next - 1)][Next] ← FlighTime(depot to Next)
@@ -48,5 +48,5 @@ end for
 
 ### Additional Notes
 1. This project is a programming assignment assessed by the *CSCI 3302: Data Structures & Algorithms 2* course instructed by *Dr. Nurul Liyana Binti Mohamad Zulkufli* and offered by *International Islamic University, Malaysia*.
-2. The python implementation of the this dynamic programming approach can be referred [here](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py). However, the code is not working as some part requires high levels of knowledge to implement and has been labelled as *todo*. 
+2. The python implementation of the this dynamic programming approach can be referred [here](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py). However, the code is not working as some part requires high levels of knowledge to implement and has been labelled as *todo*. I also issue the problem in StackOverflow which can be found [here](https://stackoverflow.com/q/75266932/9260075).
 3. The project is licensed under **MIT License**, the terms of which are available in [LICENSE.txt](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/LICENSE).
