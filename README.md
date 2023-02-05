@@ -1,9 +1,13 @@
-# CSCI 3302: Modified Algorithm - FSVRPLW
-<p align="justify"><b>FSVRPLW</b> stands for <i>Flight Speed-aware Vehicle Routing Problem with Load and Wind</i> and is one of the <a href="https://en.wikipedia.org/wiki/NP-hardness">NP-hard problems</a>. The dynamic programming approach to this problem is finding the optimal route that minimizes the total flight time. The payloads influences the flight speed, the heavier the weight, the slower it will be. The goal is to calculate the shortest time for the drone to deliver all the packages.</p>
+# CSCI 3302: Modified Algorithm — FSVRPLW
+<p align="justify"><b>CSCI 3302</b> or <i>Data Structures & Algorithms II</i> is a course instructed by <b>Dr. Nurul Liyana Binti Mohamad Zulkufli</b> and offered by <i>International Islamic University, Malaysia.</i> All codes including documentation in this repository were written and prepared by <b>Muhammad Hadif Bin Mohd Hatta (matric  2114589)</b>.</p>
 
+<p align="justify"><b>FSVRPLW</b> stands for <i>Flight Speed-aware Vehicle Routing Problem with Load and Wind</i> and is one of the <a href="https://en.wikipedia.org/wiki/NP-hardness">NP-hard problems</a>. The dynamic programming approach to this problem is finding the optimal route that minimizes the total flight time. The payloads influences the flight speed, the heavier the weight, the slower it will be. The goal is to calculate the shortest time for the drone to deliver all the packages.</p>
+  
+  
 ### Journal Reference
 <div class="csl-entry">Ito, S., Akaiwa, K., Funabashi, Y., Nishikawa, H., Kong, X., Taniguchi, I., &#38; Tomiyama, H. (2022). Load and Wind Aware Routing of Delivery Drones. <i>Drones</i>, <i>6</i>(2). https://doi.org/10.3390/drones6020050</div>
-
+  
+  
 ### Pseudocodes for FSVRPLW
 ```
 Input: N: Number of customer, W: Payload of each customer,
@@ -38,6 +42,16 @@ for Previous ∈ C do
 end for
 ```
 
+### Coding & Known Issue
+The python implementation for this dynamic programming approach can be found below:
+1. Basic algorithm - [Link](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/f698270dd29de2268275552e172d120298427f6f/main.py)
+2. Modified algorithm - [Link](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py)
+
+<p align="justify">However, the <b>modified algorithm</b> is not working as some part requires high levels knowledge of understanding in order to be implemented. This problem has also been issued in <b>StackOverflow</b> which can be found <a href="https://stackoverflow.com/q/75266932/9260075">here</a> and has been labelled as <b>todo</b> in the coding file. The parts related are as follow:</p>  
+
+`FT[Visited|(1 << (Next - 1))][Next] ← min(FT[Visited][Previous] + FlightTime(Previous to Next), FT[Visited|(1 << (Next - 1))][Next])`
+  
+  
 ### Performances
 | Complexity | T(n) |
 | :--- | :---: |
@@ -45,8 +59,7 @@ end for
 | Space | ? |
 
 <sub>* *Time and space complexity are yet to be identify as the code is currently not working.*</sub>
-
-### Additional Notes
-1. This project is a programming assignment assessed by the *CSCI 3302: Data Structures & Algorithms 2* course instructed by *Dr. Nurul Liyana Binti Mohamad Zulkufli* and offered by *International Islamic University, Malaysia*.
-2. The python implementation of the this dynamic programming approach can be referred [here](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/main.py). However, the code is not working as some part requires high levels of knowledge to implement and has been labelled as *todo*. I also issue the problem in StackOverflow which can be found [here](https://stackoverflow.com/q/75266932/9260075).
-3. The project is licensed under **MIT License**, the terms of which are available in [LICENSE.txt](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/LICENSE).
+  
+  
+### License
+The project is licensed under **MIT License**, the terms of which are available in [LICENSE.txt](https://github.com/hdfhtt/CSCI3302_FSVRPLW/blob/main/LICENSE).
